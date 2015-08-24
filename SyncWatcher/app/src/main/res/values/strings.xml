@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SyncWatcher</string>
+    <string name="title_activity_room_list">SyncWatcher Rooms</string>
+    <string name="title_activity_create">SyncWatcher Create</string>
+    <string name="title_activity_room_add">SyncWatcher Add</string>
+    <string name="title_activity_control">SyncWatcher Control</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="str_title">SyncWatcher Remote Control</string>
+    <string name="str_serverIP">ServerIP:</string>
+    <string name="str_username">Username:</string>
+    <string name="str_password">Password:</string>
+    <string name="str_notice">Developed by Chenghu He/Wanjun Fan</string>
+    <string name="str_sign_in"> SIGN IN </string>
+    <string name="str_create_account"> NEW ACCOUNT </string>
+
+    <string name="str_label_new">Create New Account</string>
+    <string name="str_label_retype">Re-enter:</string>
+    <string name="str_button_create"> CREATE </string>
+    <string name="str_button_back"> BACK </string>
+    <string name="str_label_info">For Remote Control</string>
+
+    <string name="str_add_new">Add New Room</string>
+    <string name="str_add_name">Room Name:</string>
+    <string name="str_add_type">Video Type:</string>
+    <string name="str_add_description">Description:</string>
+
+    <string name="str_welcome">Welcome</string>
+    <string name="str_logout"> LOG OUT </string>
+    <string name="str_button_refresh"> REFRESH </string>
+    <string name="str_room_enter"> ENTER </string>
+    <string name="str_room_new"> NEW ROOM </string>
+    <string name="str_room_notice">Select your rooms</string>
+
+    <string name="str_ctrl_name">Welcome</string>
+    <string name="str_ctrl_exit"> EXIT </string>
+    <string name="str_ctrl_delete"> DELETE </string>
+    <string name="str_ctrl_play">PLAY</string>
+    <string name="str_ctrl_stop">STOP</string>
+    <string name="str_ctrl_sync">SYNC AS</string>
+    <string name="str_ctrl_time">(HH:MM:SS)</string>
+    <string name="str_ctrl_zero">0:00:00</string>
+    <string name="str_ctrl_notice">Give Instructions</string>
+
+    <string name="info_click_room">Click a Room to Enter</string>
+    <string name="info_click_device">Click a Device to Sync</string>
+
+≈</resources>

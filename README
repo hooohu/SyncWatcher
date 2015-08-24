@@ -1,0 +1,28 @@
+SyncWatcher
+
+This project includes the following features.
+
+Server:
+• Store the user information and ask clients to create new users or login
+• Accept all designed http requests and parse the instructions
+• Allow user to create new hosts
+• Allow user to add new devices to hosts
+• Allow user to refresh the list of current hosts
+• Accept the instructions from remote control and send them to pending list • Accept the query from player and send instructions from pending list
+• Handle connection issues
+
+Client (Remote Control):
+• Sign in as remote control
+• Send request to create new hosts
+• Modify the host name, video type, and video source
+• Send instructions of play, pause, stop, and zoom fullscreen • Send instruction to synchronize when paused
+• Get the list of joined devices
+• Get the playing status of joined devices
+
+Client (Player):
+• Sign in as video player
+• Get the list of available hosts
+• Join one host
+• Set the video source and prepare to play
+• Send requests for instructions once per second
+• Follow the instructions of play, pause, stop, and zoom fullscreen • Change time line when get instruction of synchronizing

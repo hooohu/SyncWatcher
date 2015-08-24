@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.gwu_cs6221_paradigm_hechh.syncwatcher.ControlActivity"
+    android:background="#a0e0ff" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_name"
+        android:id="@+id/textCtrl"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_delete"
+        android:id="@+id/buttonDelete"
+        android:textSize="20sp"
+        android:onClick="clickDelete"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/roundedblue"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_exit"
+        android:id="@+id/buttonExit"
+        android:textSize="20sp"
+        android:onClick="clickExit"
+        android:layout_toLeftOf="@id/buttonDelete"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/roundedblue"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_sync"
+        android:id="@+id/buttonSyncAs"
+        android:textSize="20sp"
+        android:onClick="clickSyncAs"
+        android:layout_below="@id/buttonDelete"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/roundedblue"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_time"
+        android:id="@+id/textTime"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/buttonSyncAs"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTime"
+        android:text="@string/str_ctrl_zero"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/buttonSyncAs"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/textTime"
+        android:layout_marginRight="15dp"
+        android:layout_alignBaseline="@id/buttonSyncAs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_click_device"
+        android:id="@+id/textClickInfo"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonSyncAs"
+        android:layout_marginTop="5dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textClickInfo"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_above="@+id/buttonRefresh">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listDevices" />
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button_refresh"
+        android:id="@+id/buttonRefresh"
+        android:textSize="20sp"
+        android:onClick="clickRefresh"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedblue"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_play"
+        android:id="@+id/buttonPlay"
+        android:textSize="20sp"
+        android:onClick="clickPlay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/buttonStop"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedblue"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_stop"
+        android:id="@+id/buttonStop"
+        android:textSize="20sp"
+        android:onClick="clickStop"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedblue"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ctrl_notice"
+        android:id="@+id/textInfo"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>
