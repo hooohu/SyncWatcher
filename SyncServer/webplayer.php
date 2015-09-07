@@ -237,6 +237,8 @@ function searchRooms() {
         <div id="joinRes"></div>
 </form>
 <br>
+<a href='index.php'>Back</a>
+<br>
 <p><small>Developed by Chenghu He/Wanjun Fan. 2015</small></p>
 </body>
 </html>

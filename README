@@ -26,3 +26,4 @@ Client (Player):
 • Set the video source and prepare to play
 • Send requests for instructions once per second
 • Follow the instructions of play, pause, stop, and zoom fullscreen • Change time line when get instruction of synchronizing
+
